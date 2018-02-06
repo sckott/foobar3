@@ -1,0 +1,13 @@
+Package: foobar3
+Title: Testing Testing Testing
+Description: Testing Testing Testing
+Date: 2018-02-05
+Version: 0.1.0
+Authors@R: person("Scott", "Chamberlain", role = c("aut","cre"),
+    email = "myrmecocystus@gmail.com")
+License: MIT + file LICENSE
+URL: https://github.com/sckott/foobar3
+BugReports: https://github.com/sckott/foobar3/issues
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1
