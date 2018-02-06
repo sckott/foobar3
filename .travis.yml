@@ -3,7 +3,7 @@ sudo: false
 cache: packages
 dist: trusty
 
-github_packages:
+r_github_packages:
   - MangoTheCat/goodpractice
 
 after_success:
