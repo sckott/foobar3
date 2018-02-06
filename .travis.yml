@@ -8,3 +8,7 @@ r_github_packages:
 
 after_success:
   - Rscript -e 'Sys.setenv(NOT_CRAN = "true"); x = goodpractice::gp();  goodpractice::export_json(x, "ropensci_check_foobar3_0.1.0_2018-02-06.json"); x'
+
+addons:
+  artifacts:
+    s3_region: "us-west-2"
