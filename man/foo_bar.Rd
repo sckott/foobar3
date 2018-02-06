@@ -9,6 +9,9 @@ foo_bar()
 \description{
 foo_bar
 }
+\details{
+asdfasdflajsdfals dflasj dfaljsdf asldfj asdlfja sdfljas dflja sdfljas dflajs dflajsdf alsjf aljsdf
+}
 \examples{
 foo_bar()
 }

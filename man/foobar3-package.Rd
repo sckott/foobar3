@@ -6,7 +6,7 @@
 \alias{foobar3}
 \title{foobar3 package}
 \description{
-foobar3 package
+asdlfjasdlfa fljas falsjfd dsalfj asljf asljf asljdf alfkj asldfj asldfj aslfj aslfjaslfasdf slj lj afs
 }
 \author{
 Scott Chamberlain \email{myrmecocystus@gmail.com}
