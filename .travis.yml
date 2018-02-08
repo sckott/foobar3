@@ -10,7 +10,7 @@ r_github_packages:
   - MangoTheCat/goodpractice
 
 after_success:
-  - Rscript -e 'Sys.setenv(NOT_CRAN = "true"); x = goodpractice::gp(); goodpractice::export_json(x, sprintf("ropensci_check_%s_v%s_%s.json", "foobar3", utils::packageVersion("foobar3"), format(Sys.time(), format="%y-%h-%d_%T")));  x'
+  - Rscript -e 'Sys.setenv(NOT_CRAN = "true"); x = goodpractice::gp(); z = paste0(capture.output(x), collapse="\\n"); cat(z, file = "summary.txt");  goodpractice::export_json(x, sprintf("ropensci_check_foobar3_%s.json", format(Sys.time(), format="%y-%h-%d_%T"))); x'
 
 addons:
   artifacts:
