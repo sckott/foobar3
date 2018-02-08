@@ -3,11 +3,14 @@ sudo: false
 cache: packages
 dist: trusty
 
+env:
+  - R_PACKAGE=foobar3
+
 r_github_packages:
   - MangoTheCat/goodpractice
 
 after_success:
-  - Rscript -e 'Sys.setenv(NOT_CRAN = "true"); x = goodpractice::gp();  goodpractice::export_json(x, "ropensci_check_foobar3_0.1.0_2018-02-06.json"); x'
+  - Rscript -e 'Sys.setenv(NOT_CRAN = "true"); x = goodpractice::gp(); goodpractice::export_json(x, sprintf("ropensci_check_%s_v%s_%s.json", "foobar3", utils::packageVersion("foobar3"), format(Sys.time(), format="%y-%h-%d_%T")));  x'
 
 addons:
   artifacts:
